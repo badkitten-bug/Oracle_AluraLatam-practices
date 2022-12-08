@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular puntos de futbol</title>
+</head>
+<body>
+    <h1>Programa - calcular puntos de un equipo de futbol</h1>
+    <script>
+        function saltarLinea(){
+            document.write("<br>");
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function imprimir(frase){
+            document.write(frase);
+            saltarLinea();
+        }
+
+        /* var victorias = prompt("Introduce el numero de victorias");
+        var empates = prompt("Introduce el numero de empates");
+
+        puntosTotal = (victorias * 3) + (empates * 1); */
+        var victorias = parseInt(prompt("Introduce el numero de victorias"));
+        var empates = parseInt(prompt("Introduce el numero de empates"));
+
+        puntosTotal = (victorias * 3) + empates ;
+
+        imprimir("El equipo tiene " + puntosTotal + " puntos");
+    </script>
+</body>
+</html>
