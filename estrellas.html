@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    for (var lineas = 1; lineas <= 3; lineas++) {
+        for (var columnas = 1; columnas < 10; columnas++) {
+            document.write("*");
+        }
+        saltarLinea();
+    }
+
+    saltarLinea();
+    saltarLinea();
+    imprimir("Ahora con while");
+    saltarLinea();
+    saltarLinea();
+
+    var lineas = 1;
+    while (lineas <= 3) {
+        var columnas = 1;
+        while (columnas <= 10) {
+            document.write("*");
+            columnas++;
+        }
+        saltarLinea();
+        lineas++;
+    }
+
+
+
+
+
+</script>
